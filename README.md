@@ -28,7 +28,7 @@ Impact & Vision
 This project represents the intersection of **technical engineering** and **social responsibility**. Beyond its humanitarian applications, the underlying technology of identity-consistent attribute manipulation has significant applications in the **cosmetic and fashion industries** for virtual aging and skin-care efficacy visualization.
 
 Tech Stack
-* [cite_start]**Language**: Python 
-* [cite_start]**Deep Learning**: PyTorch 
-* [cite_start]**Computer Vision**: StyleGAN2, ArcFace, SeFa 
+* **Language**: Python 
+* **Deep Learning**: PyTorch 
+* **Computer Vision**: StyleGAN2, ArcFace, SeFa 
 
