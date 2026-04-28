@@ -5,17 +5,17 @@ Identity-Preserving Facial Age Progression via StyleGAN2
 [![Impact](https://img.shields.io/badge/Impact-Missing%20Persons-green)](#)
 
 Project Overview
-[cite_start]This project implements a sophisticated machine learning algorithm designed to simulate facial evolution across time while strictly preserving the underlying identity of the subject. Developed as a potential solution for identifying missing persons from outdated childhood photographs, this system addresses a critical social challenge: the **3.8 lakh unresolved missing person cases in India**.
+This project implements a sophisticated machine learning algorithm designed to simulate facial evolution across time while strictly preserving the underlying identity of the subject. Developed as a potential solution for identifying missing persons from outdated childhood photographs, this system addresses a critical social challenge: the **3.8 lakh unresolved missing person cases in India**.
 
 By leveraging **StyleGAN2** and advanced latent space manipulation, the model ensures that facial aging is realistic rather than just a cosmetic filter, maintaining the unique biometric characteristics required for identification.
 
 Technical Architecture
 The core challenge of age progression is preventing "identity drift" during the aging process. This project solves this by combining generative power with geometric and facial recognition constraints:
 
-* [cite_start]**StyleGAN2 Backbone**: Utilized for high-fidelity facial synthesis and a well-structured latent space
-* [cite_start]**Latent Code Manipulation**: Employs a dual approach for editing latent vectors, including **SeFa (Semantic Factorization)** to isolate age-related factors
-* [cite_start]**Identity Constraint (ArcFace)**: Integrated **ArcFace similarity scoring** to calculate and minimize identity loss between the source and the generated aged image
-* [cite_start]**Precision Masking**: Applied **face-parsing masks** to ensure that modifications are localized to aging features (like skin texture and bone structure) without distorting key identifiers like eye shape or facial proportions
+* **StyleGAN2 Backbone**: Utilized for high-fidelity facial synthesis and a well-structured latent space
+* **Latent Code Manipulation**: Employs a dual approach for editing latent vectors, including **SeFa (Semantic Factorization)** to isolate age-related factors
+* **Identity Constraint (ArcFace)**: Integrated **ArcFace similarity scoring** to calculate and minimize identity loss between the source and the generated aged image
+* **Precision Masking**: Applied **face-parsing masks** to ensure that modifications are localized to aging features (like skin texture and bone structure) without distorting key identifiers like eye shape or facial proportions
 
 Key Features
 * **High Fidelity**: Maintains resolution and realistic textures across different age milestones
@@ -32,7 +32,3 @@ Tech Stack
 * [cite_start]**Deep Learning**: PyTorch 
 * [cite_start]**Computer Vision**: StyleGAN2, ArcFace, SeFa 
 
-
-### How to use this README:
-1.  **Add a "Results" Section**: Include a side-by-side image of a child compared to your model's aged output.
-2.  **Installation**: Add a quick `pip install -r requirements.txt` section.
